@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicionamiento</title>
+  <style>
+    div {
+      min-width: 250px;
+      min-height: 150px;
+      border: solid 5px red;
+      margin: 5px;
+      position: static;
+      font-size: 50px;
+      text-align: center;
+      line-height: 150px;
+    }
+    .padre{
+   
+    }
+    .hijo {
+      position: relative;
+    }
+
+    .nieto {
+      position: absolute;
+      background-color: burlywood;
+      border-color: green;
+
+      left: 40px;
+      right: 40px;
+    }
+    .cuatro {
+      position: fixed;
+
+      bottom: 0;
+      right: 0;
+      left: 0px;
+      background-color: cyan;
+      border-color: lightgreen;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="padre">
+    <div class="hijo">
+      <div class="nieto">
+        1
+      </div>
+    </div>
+  </div>
+
+  <div class="padre">
+    <div class="hijo">
+      <div class="nieto">
+        2
+      </div>
+    </div>
+  </div>
+
+    <div class="padre">
+      <div class="hijo">
+        <div class="nieto">
+          3
+        </div>
+      </div>
+    </div>
+
+    <div class="padre">
+      <div class="hijo">
+        <div class="nieto cuatro">
+          4
+        </div>
+      </div>
+    </div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nisi? Mollitia, ad. Minus sit rerum, laborum repellendus corporis eius ullam? Expedita placeat ipsum omnis accusantium debitis voluptates, dolore officia. Cum.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero quas cum excepturi. Vitae, placeat. Quaerat, veritatis. A voluptate reprehenderit provident pariatur? Deleniti voluptatem laudantium, aspernatur architecto similique officia nam.</p>
+  
+</body>
+</html>
