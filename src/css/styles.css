@@ -1,9 +1,7 @@
 * {
   font-family: 'Cairo', Arial, Helvetica, sans-serif;
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+
 
 body {
   background-color: black;
@@ -27,4 +25,16 @@ a {
 .logo span {
   color: #d65a31;
   
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.xl {
+  font-size: 1.5rem;
 }
