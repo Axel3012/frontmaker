@@ -16,8 +16,6 @@ display: none;
   text-align: center;
   padding: 0;
   margin: 0;
-  height: 50px;
-  line-height: 50px;
 }
 
 .navbar-item {
@@ -25,6 +23,31 @@ display: none;
   margin: 0 .25em;
 }
 
+.navbar-item a {
+  display: block;
+  margin: 0 0.25rem;
+  padding: .5rem;
+
+}
+.navbar-item a:hover {
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
+  
+}
+
 header {
   clear: both;
+}
+
+@media (min-width: 780px) {
+  .navbar>.logo {
+    display: block;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+  }
+  .navbar > .navbar-list {
+    float: right;
+  }
 }
